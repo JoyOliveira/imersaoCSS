@@ -1,26 +1,100 @@
-body{
-    background-image: url("../img/fundo.jpg");
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+*/
+
+body{
+    background-color:#2f227d;    
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar esse estilo*/
+
+@media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+  }
+/*
+header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+*/
 
 .menu{
-    background-color: whitesmoke;
+    background-color:#2f227d;
+    height: 95vh;
+    width: 200px;  /*Define a largura do menu*/ 
 }
 
+/* Definições do menu */
+.menu a{
+    color: whitesmoke;
+    display: block;
+    padding: 12px;
+    padding-left: 10px;
+    border-radius: 20px;
+    
+}
+
+/* Definições do menu quando o mouse passa por cima*/
+.menu a:hover{
+    color:whitesmoke;
+    border: 2px solid #fcba03;
+    padding: 10px; 
+    text-decoration: none;
+    width: 100px;*/
+    
+}
+
+/* Disposição do menu*/
+.menu ul{
+    display: initial;
+}
+
+/* Retirar estilo de lista no menu*/
 .menu li{
     list-style: none;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
 }
 
-.menu ul{
-    display: flex;
-    justify-content: space-around;
+
+/* Definindo o título*/
+.titulo{
+
+    width: 900px;
 }
 
+/*Retira o underline de todos os links na página*/
 a{
     text-decoration: none;
+
 }
 
+/*Quando passar o mouse por cima, aparece o underline do link no Menu*/
 a:hover{
     text-decoration: underline;
+}
+
+/*
+
+.site-title{
+    font-size: 4em;
+    font-family: 'Indie Flower', cursive;
 }
 
 .site-subtitle,
@@ -31,4 +105,44 @@ a:hover{
 
 .site-subtitle{
     font-style: italic;
+    font-family: 'Righteous', cursive;
 }
+
+.portfolio{
+    padding: 10px;
+}
+
+.portfolio h2{
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
+}
+
+@media (min-width: 560px){
+    .grid{
+        grid-template-columns: 240px 240px;
+    }
+
+}
+
+@media (min-width: 880px){
+    .grid{
+        grid-template-columns: 240px 240px 240px;
+    }
+
+}
+
+.grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 240px 240px;
+}
+
+.portfolio figure{
+    text-align: center;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 200px;
+}
+*/
