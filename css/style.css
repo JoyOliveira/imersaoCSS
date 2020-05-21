@@ -35,7 +35,8 @@ header{
 
 /* formatação do menu quando o mouse passa por cima*/
 .menu a:hover{
-    color: midnightblue;
+    color: gray;
+    text-shadow: 5px 15px 40px mintcream;
 }
 
 /* colocar um item ao lado do outro no menu*/
@@ -43,7 +44,7 @@ header{
     display: flex; /*faz virar coluna*/
     justify-content: space-around; /*inclui espaço entre os itens */
     /* justify-content só funciona após o display flex*/
-    border-left: 2px solid whitesmoke;
+    border-left: 2px solid mintcream;
 }
 
 /* retirar estilo de lista do link no menu*/
@@ -53,7 +54,7 @@ header{
 
 .titulo{
     padding-left: 10px;
-    border-left: 2px solid whitesmoke;
+    border-left: 2px solid mintcream;
 }
 
 .site-subtitle,
@@ -62,19 +63,88 @@ header{
     text-align: right; /*centralizar texto*/
 }
 
+.site-title{
+    font-family: 'Vibur', cursive;
+    font-size: 3em;
+}
+
+@media (min-width: 560px){
+    .site-title{
+        font-size: 6em;
+    }
+}
+
 .site-subtitle{
-    font-style: italic;
+    font-family: 'Teko', sans-serif;
     font-size: 1em;
     margin: 0 auto;
 }
 
-/*efeito de digitação */
-@keyframes{
-    from { 
-      
+@media (min-width: 560px){
+    .site-subtitle{
+        font-size: 3em;
+    }
 }
 
-.img-experiencia{
+.formacao{
+    background-color: pink;
+    padding: 2em;
+    height: 100vh;
+}
+
+.titulo_item{
+    color: gray;
+    font-family: 'Teko', sans-serif;
+    font-size: 2em;
+}
+
+.formacao .grid{
+    display: grid;
+    gap: 2em; /*define espaçamento entre colunas e linhas do grid*/
+    justify-content: center; /*pode utilizar por causa do grid*/
+}
+
+/*tratar o caso de uma tela maior*/
+@media (min-width: 560px){
+    .formacao .grid{
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px){
+    .formacao .grid{
+        grid-template-columns: 260px 260px 260px;
+    }
+}
+
+.img-formacao{
     height: 180px;
-    width: 180px;
+    width: 200px;
+}
+
+.experiencia{
+    background-color: mintcream;
+    height: 100vh;
+    color: gray;
+    font-size: 1.2em;
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.experiencia h1{
+    font-family: 'Teko', sans-serif;
+    color: #a61e4d;
+
+}
+
+.grid_exp{
+    padding-left: 30px;
+}
+
+.contato{
+    height: 40vh;
+}
+
+.contato_texto{
+    font-family: 'Teko', sans-serif;
 }
