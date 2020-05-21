@@ -1,148 +1,80 @@
-/*
-* {
+*{
+    /*reset na margem e padding*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* o tamanho é considerado a partir da borda*/    
 }
-*/
 
 body{
-    background-color:#2f227d;    
+    background-color: #a61e4d;
 }
 
-/* Se a tela tiver pelo menos 400px vai carregar esse estilo*/
-
-@media (min-width: 400px) {
-    body {
-      font-size: 14px;
-    }
-  }
-  
-  @media (min-width: 600px) {
-    body {
-      font-size: 20px;
-    }
-  }
-/*
+/* formatação do cabeçalho*/
 header{
     height: 100vh;
-    display: flex;
-    align-items: center;
+    display: flex; /*coloca os itens em colunas*/
     justify-content: center;
-    flex-wrap: wrap;    
+    align-items: center;   
 }
-*/
 
+/* formatando o Menu*/
 .menu{
-    background-color:#2f227d;
-    height: 95vh;
-    width: 200px;  /*Define a largura do menu*/ 
+    background-color: #faa2c1;
+    height: 30px;
+    position: fixed; /*fixar o elemento */
+    width: 100vw;
+    top: 0; /*só funciona com o position declarado*/
+    font-size: 25px;
 }
 
-/* Definições do menu */
+/* formatando os links da página*/
 .menu a{
-    color: whitesmoke;
-    display: block;
-    padding: 12px;
-    padding-left: 10px;
-    border-radius: 20px;
-    
+    text-decoration: none; /*tirar o underline do link*/
+    color: mintcream;
 }
 
-/* Definições do menu quando o mouse passa por cima*/
+/* formatação do menu quando o mouse passa por cima*/
 .menu a:hover{
-    color:whitesmoke;
-    border: 2px solid #fcba03;
-    padding: 10px; 
-    text-decoration: none;
-    width: 100px;*/
-    
+    color: midnightblue;
 }
 
-/* Disposição do menu*/
+/* colocar um item ao lado do outro no menu*/
 .menu ul{
-    display: initial;
+    display: flex; /*faz virar coluna*/
+    justify-content: space-around; /*inclui espaço entre os itens */
+    /* justify-content só funciona após o display flex*/
+    border-left: 2px solid whitesmoke;
 }
 
-/* Retirar estilo de lista no menu*/
+/* retirar estilo de lista do link no menu*/
 .menu li{
     list-style: none;
-    margin-top: 60px;
-    margin-bottom: 50px;
-
 }
 
-
-/* Definindo o título*/
 .titulo{
-
-    width: 900px;
-}
-
-/*Retira o underline de todos os links na página*/
-a{
-    text-decoration: none;
-
-}
-
-/*Quando passar o mouse por cima, aparece o underline do link no Menu*/
-a:hover{
-    text-decoration: underline;
-}
-
-/*
-
-.site-title{
-    font-size: 4em;
-    font-family: 'Indie Flower', cursive;
+    padding-left: 10px;
+    border-left: 2px solid whitesmoke;
 }
 
 .site-subtitle,
-.site-title{
-    color: whitesmoke;
-    text-align: center;
+.site-title{ 
+    color: mintcream;
+    text-align: right; /*centralizar texto*/
 }
 
 .site-subtitle{
     font-style: italic;
-    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    margin: 0 auto;
 }
 
-.portfolio{
-    padding: 10px;
+/*efeito de digitação */
+@keyframes{
+    from { 
+      
 }
 
-.portfolio h2{
-    font-family: 'Righteous', cursive;
-    color: whitesmoke;
-}
-
-@media (min-width: 560px){
-    .grid{
-        grid-template-columns: 240px 240px;
-    }
-
-}
-
-@media (min-width: 880px){
-    .grid{
-        grid-template-columns: 240px 240px 240px;
-    }
-
-}
-
-.grid{
-    display: grid;
-    gap: 2em;
-    grid-template-columns: 240px 240px;
-}
-
-.portfolio figure{
-    text-align: center;
-}
-
-.img-portfolio{
+.img-experiencia{
     height: 180px;
-    width: 200px;
+    width: 180px;
 }
-*/
