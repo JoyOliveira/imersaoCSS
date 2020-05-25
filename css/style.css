@@ -1,150 +1,218 @@
-*{
+* {
     /*reset na margem e padding*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* o tamanho é considerado a partir da borda*/    
+    box-sizing: border-box;
+    /* o tamanho é considerado a partir da borda*/
 }
 
-body{
+body {
     background-color: #a61e4d;
 }
 
 /* formatação do cabeçalho*/
-header{
+
+header {
     height: 100vh;
-    display: flex; /*coloca os itens em colunas*/
+    display: flex;
+    /*coloca os itens em colunas*/
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 /* formatando o Menu*/
-.menu{
+
+.menu {
     background-color: #faa2c1;
     height: 30px;
-    position: fixed; /*fixar o elemento */
+    position: fixed;
+    /*fixar o elemento */
     width: 100vw;
-    top: 0; /*só funciona com o position declarado*/
+    top: 0;
+    /*só funciona com o position declarado*/
     font-size: 25px;
 }
 
+a {
+    color: mintcream;
+    text-decoration: none;
+}
+
 /* formatando os links da página*/
-.menu a{
-    text-decoration: none; /*tirar o underline do link*/
+
+.menu a {
+    text-decoration: none;
+    /*tirar o underline do link*/
     color: mintcream;
 }
 
 /* formatação do menu quando o mouse passa por cima*/
-.menu a:hover{
+
+.menu a:hover {
     color: gray;
     text-shadow: 5px 15px 40px mintcream;
 }
 
 /* colocar um item ao lado do outro no menu*/
-.menu ul{
-    display: flex; /*faz virar coluna*/
-    justify-content: space-around; /*inclui espaço entre os itens */
+
+.menu ul {
+    display: flex;
+    /*faz virar coluna*/
+    justify-content: space-around;
+    /*inclui espaço entre os itens */
     /* justify-content só funciona após o display flex*/
     border-left: 2px solid mintcream;
 }
 
 /* retirar estilo de lista do link no menu*/
-.menu li{
+
+.menu li {
     list-style: none;
 }
 
-.titulo{
+.titulo {
     padding-left: 10px;
     border-left: 2px solid mintcream;
 }
 
-.site-subtitle,
-.site-title{ 
+.site-subtitle, .site-title {
     color: mintcream;
-    text-align: right; /*centralizar texto*/
+    text-align: right;
+    /*centralizar texto*/
 }
 
-.site-title{
+.site-title {
     font-family: 'Vibur', cursive;
     font-size: 3em;
 }
 
-@media (min-width: 560px){
-    .site-title{
+@media (min-width: 560px) {
+    .site-title {
         font-size: 6em;
     }
 }
 
-.site-subtitle{
+.site-subtitle {
     font-family: 'Teko', sans-serif;
     font-size: 1em;
     margin: 0 auto;
 }
 
-@media (min-width: 560px){
-    .site-subtitle{
+@media (min-width: 560px) {
+    .site-subtitle {
         font-size: 3em;
     }
 }
 
-.formacao{
+.formacao {
     background-color: pink;
     padding: 2em;
-    height: 100vh;
+    height: 1100px;
 }
 
-.titulo_item{
+.titulo_item {
     color: gray;
     font-family: 'Teko', sans-serif;
     font-size: 2em;
 }
 
-.formacao .grid{
+.formacao .grid {
     display: grid;
-    gap: 2em; /*define espaçamento entre colunas e linhas do grid*/
-    justify-content: center; /*pode utilizar por causa do grid*/
+    gap: 2em;
+    /*define espaçamento entre colunas e linhas do grid*/
+    justify-content: center;
+    /*pode utilizar por causa do grid*/
 }
 
 /*tratar o caso de uma tela maior*/
-@media (min-width: 560px){
-    .formacao .grid{
+
+@media (min-width: 560px) {
+    .formacao .grid {
         grid-template-columns: 240px 240px;
     }
-}
-
-@media (min-width: 880px){
-    .formacao .grid{
-        grid-template-columns: 260px 260px 260px;
+    .formacao {
+        height: 100vh;
     }
 }
 
-.img-formacao{
-    height: 180px;
-    width: 200px;
+@media (min-width: 880px) {
+    .formacao .grid {
+        grid-template-columns: 260px 260px 260px;
+    }
+    .formacao {
+        height: 100vh;
+    }
 }
 
-.experiencia{
+.img-formacao {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+  }
+
+.experiencia {
     background-color: mintcream;
-    height: 100vh;
+    height: 1900px;
     color: gray;
     font-size: 1.2em;
     padding-left: 35px;
     padding-top: 30px;
 }
 
-.experiencia h1{
+/*Formatação título experiência*/
+
+.experiencia h1 {
     font-family: 'Teko', sans-serif;
     color: #a61e4d;
-
+    margin-top: 40px;
 }
 
-.grid_exp{
+.grid_exp {
     padding-left: 30px;
+    display: grid;
+    grid-template-columns: 200px;
+    justify-content: left;
 }
 
-.contato{
+@media (min-width: 880px) {
+    .experiencia {
+        height: 1100px;
+    }
+    .grid_exp {
+        grid-template-columns: 600px;
+    }
+}
+
+
+
+.contato {
+    padding-left: 35px;
+    padding-top: 30px;
     height: 40vh;
 }
 
-.contato_texto{
+.contato_texto {
     font-family: 'Teko', sans-serif;
+}
+
+.periodo-exp {
+    color: #faa2c1;
+}
+
+.grid-contatos {
+    display: flex;
+    color: mintcream;
+    font-size: 4em;
+    justify-content: center;
+    gap: 2em;
+}
+
+.grid-contatos a {
+    display: flex;
+}
+
+.grid-contatos a:hover {
+    text-shadow: 5px 5px 5px gray;
 }
