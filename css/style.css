@@ -144,6 +144,45 @@ a {
     }
 }
 
+/*Configuração das imagens do grid para efeito de virar card*/
+
+.flip-card {
+    height: 180px;
+    perspective: 1000px;
+  }
+  
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+  }
+  
+  .card-front, 
+  .card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+  
+/*Final efeito virar card*/
+
+
 .img-formacao {
     height: 180px;
     width: 100%;
@@ -151,6 +190,13 @@ a {
     object-position: left bottom;
     transition: transform 500ms;
   }
+
+.formacao h3{
+    color: gray;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+
+}
 
 .experiencia {
     background-color: mintcream;
