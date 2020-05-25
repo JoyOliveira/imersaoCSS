@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Joy - Página Pessoal</title>
-    <link rel="stylesheet" href="css/style.css">  
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Stint+Ultra+Expanded&family=Teko:wght@500&family=Vibur&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0d83c6064a.js" crossorigin="anonymous"></script>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Joy - Página Pessoal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Stint+Ultra+Expanded&family=Teko:wght@500&family=Vibur&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0d83c6064a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<!-- Cabeçalho (Menu e título)-->
-<header>
+  <!-- Cabeçalho (Menu e título)-->
+  <header>
     <nav class="menu" id="menu">
-        <ul>
-            <li><a href="#top"><i class="far fa-address-card"></i></a></li>
-            <li><a href="#formacao"><i class="fas fa-graduation-cap"></i></a></li>
-            <li><a href="#experiencia"><i class="fas fa-laptop-code"></i></i></a></li>
-            <li><a href="#contato"><i class="fas fa-at"></i></a></li>
-        </ul>
+      <ul>
+        <li><a href="#top"><i class="far fa-address-card"></i></a></li>
+        <li><a href="#formacao"><i class="fas fa-graduation-cap"></i></a></li>
+        <li><a href="#experiencia"><i class="fas fa-laptop-code"></i></i></a></li>
+        <li><a href="#contato"><i class="fas fa-at"></i></a></li>
+      </ul>
     </nav>
-    
+
     <div class="titulo" id="titulo">
-    <h1 class="site-title">Joyce Oliveira</h1>
-    <h2 class="site-subtitle">Analista de testes</h2>
+      <h1 class="site-title">Joyce Oliveira</h1>
+      <h2 class="site-subtitle">Analista de testes</h2>
     </div>
 
-</header>
-<!-- Fim do cabeçalho -->
+  </header>
+  <!-- Fim do cabeçalho -->
 
-<section class="formacao" id="formacao">
+  <section class="formacao" id="formacao">
     <h2 class="titulo_item">Formação / Cursos</h2>
+
+    <!--Galeria de imagens-->
     <div class="grid">
-    <figure>
-      <img class="img-formacao" src="./img/img2.jpg" alt=">NED">
-      <figcaption>Testes</figcaption>
-    </figure>
-    <figure>
-      <img class="img-formacao" src="./img/img3.jpg" alt="Web design">
-      <figcaption>Desenvolvimento</figcaption>
-    </figure>
-    <figure>
-      <img class="img-formacao" src="./img/img4.jpg" alt="Projetos pessoais">
-      <figcaption>Tecnologias na Educação</figcaption>
-    </figure>
-    <figure>
-        <img class="img-formacao" src="./img/img1.jpg" alt="Projetos pessoais">
-        <figcaption>Voluntariado</figcaption>
-      </figure>
+
+      <div class="flip-card">
+        <div class="card">
+      <figure>
+        <img class="img-formacao" src="./img/img2.jpg" alt=">NED">
+      </figure>  
+      <div class="card-back">
+        <h3>HTML - Imersão CSS Alura, Curso Udemy</h3>
+      </div>
     </div>
+  </div>
+
+
+      <figure>
+        <img class="img-formacao" src="./img/img3.jpg" alt="Web design">
+        <figcaption>Java</figcaption>
+      </figure>
+      <figure>
+        <img class="img-formacao" src="./img/img4.jpg" alt="Projetos pessoais">
+        <figcaption>Scrum</figcaption>
+      </figure>
+      <figure>
+        <img class="img-formacao" src="./img/img3.jpg" alt="Web design">
+        <figcaption>Tecnologias na Educação</figcaption>
+      </figure>
+      <figure>
+        <figure>
+          <img class="img-formacao" src="./img/img1.jpg" alt="Projetos pessoais">
+          <figcaption>Voluntariado</figcaption>
+        </figure>
+    </div>
+
   </section>
 
 
@@ -57,32 +77,54 @@
     <h2 class="titulo_item">Experiência</h2>
     <div class="grid_exp">
       <h1>NED Crepes</h1>
-      <p>Detalhes exp1</p>
+      <p class="periodo-exp">( 03-2014 a 03-2020)</p>
+      <p>Controle de toda a rotina administrativa, operacional, e financeira da empresa (contas a pagar/receber,
+        planilhas controle, análise de contratos, lançamento de notas fiscais). Responsável pela comunicação com
+        fornecedores, organizadores de eventos e clientes . Planejamento e supervisão da equipe durante eventos.</p>
 
       <h1>ANBIMA</h1>
-      <p>Detalhes exp2</p>
+      <p class="periodo-exp">(01-2011 a 08-2013)</p>
+      <p>Validação de artefatos (casos de uso, casos de teste, cronogramas), atualização de documentação. Automatização
+        e execução de testes funcionais no Projeto Galgo que iniciou a transferência de informações de fundos de
+        investimento por sistema padronizado.</p>
 
       <h1>Scopus Tecnologia</h1>
-      <p>Detalhes exp3</p>
+      <p class="periodo-exp">(03 - 2009 a 09-2010)</p>
+      <p>Trabalhei no Escritório de Projetos que acompanhava os projetos do Internet Banking do Bradesco, fazendo
+        validação de artefatos, elaboração de indicadores de qualidade, acompanhamento de cronogramas, execução de
+        testes funcionais.</p>
 
       <h1>Stefanini</h1>
-      <p>Detalhes exp4</p>
+      <p class="periodo-exp">(05 - 2008 a 01/2009)</p>
+      <p>Configuração de ambiente e permissões de Windows Server, XP, Vista, SQL Server para teste de lançamentos de
+        builds, elaboração e validação de casos de testes, casos de uso, em projeto offshore da empresa Idera.</p>
 
       <h1>Prime Informatica</h1>
-      <p>Detalhes exp4</p>
+      <p class="periodo-exp">(04/2007 a 04/2008)</p>
+      <p>Programação de componentes em Visual Basic, criação de manual de usuário, criação de procedures em SQL, e
+        elaboração de relatórios em Crystal Reports.</p>
 
     </div>
 
-    
+
   </section>
 
   <section class="contato" id="contato">
-    <h2 class="contato_texto">Contato</h2>
-    <div class="grid icons">
-    <a target="_blank" href="https://twitter.com/joysosegue"><i class="fab fa-twitter"></i></a>
-    <a target="_blank" href="https://github.com/JoyOliveira"><i class="fab fa-github"></i></a>
-  </div>
+    <h2 class="titulo_item">Contato</h2>
+    <div class="grid-contatos">
+
+      <a target="_blank" class="icone_contato" href="https://www.linkedin.com/in/joyce-oliveira-95600723/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a target="_blank" class="icone_contato" href="https://github.com/JoyOliveira"><i class="fab fa-github"></i></a>
+
+      <a target="_blank" class="icone_contato" href="https://twitter.com/joysosegue"><i
+          class="fab fa-twitter"></i></i></a>
+
+    </div>
   </section>
-      
+
 </body>
+
 </html>
