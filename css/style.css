@@ -14,14 +14,13 @@ body {
 
 header {
     height: 100vh;
-    display: flex;
+    /*display: flex;*/
     /*coloca os itens em colunas*/
     justify-content: center;
     align-items: center;
 }
 
 /* formatando o Menu*/
-
 .menu {
     background-color: #faa2c1;
     height: 30px;
@@ -65,20 +64,21 @@ a {
 }
 
 /* retirar estilo de lista do link no menu*/
-
 .menu li {
     list-style: none;
 }
 
 .titulo {
+    height: 60%;
     padding-left: 10px;
     border-left: 2px solid mintcream;
 }
 
 .site-subtitle, .site-title {
     color: mintcream;
-    text-align: right;
+    text-align: center;
     /*centralizar texto*/
+    margin-top: 10%;
 }
 
 .site-title {
@@ -102,6 +102,12 @@ a {
     .site-subtitle {
         font-size: 3em;
     }
+}
+
+.clima{
+ height: 20%;
+    display:flex;
+    background-color: #a61e4d;
 }
 
 .formacao {
@@ -257,6 +263,7 @@ a {
 
 .grid-contatos a {
     display: flex;
+    margin-left: 15px;
 }
 
 .grid-contatos a:hover {
