@@ -69,9 +69,7 @@ a {
 }
 
 .titulo {
-    height: 60%;
-    padding-left: 10px;
-    border-left: 2px solid mintcream;
+    height: 50%;
 }
 
 .site-subtitle, .site-title {
@@ -104,11 +102,15 @@ a {
     }
 }
 
-.clima{
+.hg-weather{
  height: 20%;
-    display:flex;
-    background-color: #a61e4d;
+ display: flex;
+ color: gray;
+ font-family: 'Teko', sans-serif;
+ font-size: 1em;
 }
+
+
 
 .formacao {
     background-color: pink;
