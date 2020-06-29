@@ -12,6 +12,9 @@
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/0d83c6064a.js" crossorigin="anonymous"></script>
   
+  <script src="js/clima.js"></script>
+
+
 
 </head>
 
@@ -31,12 +34,23 @@
       <h1 class="site-title">Joyce Oliveira</h1>
       <h2 class="site-subtitle">Analista de testes</h2>
     </div>
-    
-    <div class="clima" id="clima">
-      
-      <script src="js/main.js"></script>
+
+  
+    <div class="hg-weather" data-key="d58dd784" data-woeid="455827">
+      <span data-weather="message">Obtendo...<br></span>
+      <span data-weather="city">Obtendo cidade</span> <span data-weather="temp"> 00 </span> ºC , <br>
+      <span data-weather="description">Obtendo tempo...</span><br>
+      <img src="http://assets.api.hgbrasil.com/weather/images/44.png" data-weather="image"><br>
+  
+
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        HGWeather.initialize();
+      });
+    </script>
+    
   </header>
   <!-- Fim do cabeçalho -->
 
@@ -156,7 +170,7 @@
     </div>
   </section>
 
-  
+
 
 </body>
 
