@@ -1,1 +1,13 @@
 Projeto site pessoal com informações dos meus estudos relacionados a testes
+
+Incluir endereços dos sites que utilizei como referência:
+
+https://medium.com/creditas-tech/a-pirâmide-de-testes-a0faec465cc2
+
+https://agiletesters.github.io/#artigos
+
+https://json-schema.org/understanding-json-schema/
+
+https://www.juliodelima.com.br
+
+https://viniciuspessoni.com
