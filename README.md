@@ -1,2 +1,2 @@
-# imersaoCSS
-Site utilizando HTML e CSS
+# Página principal   
+Página pessoal construida durante a imersão CSS da Alura
